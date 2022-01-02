@@ -12,7 +12,7 @@ export const fetchPopularData = async () => {
       part: "snippet",
       maxResults: 40,
       key: KEY,
-      regionCode: "JP",
+      regionCode: "GB",
       type: "video",
       chart: "mostPopular",
     },
