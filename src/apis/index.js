@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
 
 const youtube = axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3",
@@ -8,8 +8,8 @@ const youtube = axios.create({
 
 const params = {
   part: "snippet",
-  maxResults: 40,
-  key: KEY,
+  maxResults: 5,
+  key: API_KEY,
   regionCode: "GB",
   type: "video",
 };
